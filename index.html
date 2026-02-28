@@ -9,27 +9,25 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #020617, #0f172a);
+    background: #020617;
     color: white;
 }
 
 header {
-    background: #020617;
-    padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #1e293b;
+    padding: 40px 20px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: 1px;
 }
 
 .container {
-    padding: 40px 20px;
-    max-width: 900px;
+    max-width: 600px;
     margin: auto;
+    padding: 20px;
 }
 
 .card {
@@ -37,13 +35,14 @@ header h1 {
     border: 1px solid #1e293b;
     border-radius: 12px;
     padding: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
 h2 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 20px;
+    color: #a78bfa;
 }
 
 button {
@@ -54,24 +53,18 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #2563eb;
+    background: #7c3aed;
     color: white;
     transition: 0.2s;
 }
 
 button:hover {
-    background: #1d4ed8;
-}
-
-.small {
-    font-size: 14px;
-    color: #94a3b8;
-    margin-top: 10px;
+    background: #6d28d9;
 }
 
 .footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 13px;
     color: #64748b;
 }
@@ -89,20 +82,12 @@ button:hover {
     <div class="card">
         <h2>📥 Email</h2>
         <button onclick="openInbox()">Open Inbox</button>
-        <button onclick="composeMail()">Compose Email</button>
-        <div class="small">Use your @horizontv.network login</div>
     </div>
 
     <div class="card">
-        <h2>👥 Staff Tools</h2>
+        <h2>🛠 Staff Tools</h2>
         <button onclick="openDiscord()">Open Staff Discord</button>
         <button onclick="openRoblox()">Open Roblox Group Panel</button>
-    </div>
-
-    <div class="card">
-        <h2>⚙️ HR & Admin</h2>
-        <button onclick="openHR()">HR Dashboard</button>
-        <button onclick="openDocs()">Company Documents</button>
     </div>
 
 </div>
@@ -116,24 +101,12 @@ function openInbox() {
     window.open("https://webmail.migadu.com", "_blank");
 }
 
-function composeMail() {
-    window.open("https://webmail.migadu.com/#compose", "_blank");
-}
-
 function openDiscord() {
     window.open("https://discord.gg/YOURINVITE", "_blank");
 }
 
 function openRoblox() {
     window.open("https://www.roblox.com/groups/YOURGROUPID", "_blank");
-}
-
-function openHR() {
-    window.open("https://horizontv.network/hr", "_blank");
-}
-
-function openDocs() {
-    window.open("https://drive.google.com/", "_blank");
 }
 </script>
 
