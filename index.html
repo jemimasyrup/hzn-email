@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HorizonTV Staff Portal</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #020617, #0f172a);
+    color: white;
+}
+
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #1e293b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.small {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HorizonTV Staff Portal</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📥 Email</h2>
+        <button onclick="openInbox()">Open Inbox</button>
+        <button onclick="composeMail()">Compose Email</button>
+        <div class="small">Use your @horizontv.network login</div>
+    </div>
+
+    <div class="card">
+        <h2>👥 Staff Tools</h2>
+        <button onclick="openDiscord()">Open Staff Discord</button>
+        <button onclick="openRoblox()">Open Roblox Group Panel</button>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ HR & Admin</h2>
+        <button onclick="openHR()">HR Dashboard</button>
+        <button onclick="openDocs()">Company Documents</button>
+    </div>
+
+</div>
+
+<div class="footer">
+    HorizonTV Network • Staff Access Only
+</div>
+
+<script>
+function openInbox() {
+    window.open("https://webmail.migadu.com", "_blank");
+}
+
+function composeMail() {
+    window.open("https://webmail.migadu.com/#compose", "_blank");
+}
+
+function openDiscord() {
+    window.open("https://discord.gg/YOURINVITE", "_blank");
+}
+
+function openRoblox() {
+    window.open("https://www.roblox.com/groups/YOURGROUPID", "_blank");
+}
+
+function openHR() {
+    window.open("https://horizontv.network/hr", "_blank");
+}
+
+function openDocs() {
+    window.open("https://drive.google.com/", "_blank");
+}
+</script>
+
+</body>
+</html>
